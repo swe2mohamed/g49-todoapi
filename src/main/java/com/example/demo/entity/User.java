@@ -17,7 +17,6 @@ import java.util.Set;
 @Entity
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(updatable = false)
     private String email;
 
@@ -52,9 +51,12 @@ public class User {
         if (role == null) throw new IllegalArgumentException("Role is null");
         if (roles != null) {
             roles.remove(role);
-        }else{
+        }
+        /*else{
             // todo: throw exception if needed..
         }
+
+         */
     }
 
 }
