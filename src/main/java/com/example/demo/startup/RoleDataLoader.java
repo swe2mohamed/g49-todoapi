@@ -1,7 +1,7 @@
 package com.example.demo.startup;
 
 import com.example.demo.Repository.RoleRepository;
-import com.example.demo.entity.Role;
+import com.example.demo.domain.entity.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
